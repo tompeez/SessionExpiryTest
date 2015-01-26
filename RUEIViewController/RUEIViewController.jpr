@@ -252,10 +252,6 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <value n="id" v="JSF 1.2"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
             <value n="id" v="JSTL 1.2"/>
             <value n="isJDK" v="false"/>
          </hash>
@@ -285,6 +281,10 @@
          </hash>
          <hash>
             <value n="id" v="JSF 2.1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="../../../../../jdev/jdev_system/12.1.3.0.0/system12.1.3.0.41.140521.1008/o.jdeveloper/ADF_SRC_12.1.3.library"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>
@@ -367,6 +367,10 @@
          </hash>
          <hash>
             <value n="id" v="JSF 2.1"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="../../../../../jdev/jdev_system/12.1.3.0.0/system12.1.3.0.41.140521.1008/o.jdeveloper/ADF_SRC_12.1.3.library"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>
