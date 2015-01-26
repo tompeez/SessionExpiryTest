@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich" xmlns:f="http://java.sun.com/jsf/core">
+  <af:panelStretchLayout id="psl1">
+    <f:facet name="center">
+      <af:panelGroupLayout layout="scroll" xmlns:af="http://xmlns.oracle.com/adf/faces/rich" id="pgl1">
+        <af:outputText value="Cought an Exception in a region:" id="ot2"/>
+        <af:outputText value="Message: #{controllerContext.currentViewPort.exceptionData.localizedMessage}" id="ot3"/>
+      </af:panelGroupLayout>
+      <!-- id="af_one_column_stretched"   -->
+    </f:facet>
+    <f:facet name="top">
+      <af:outputText value="Region Exception" id="ot1"/>
+    </f:facet>
+  </af:panelStretchLayout>
+</jsp:root>

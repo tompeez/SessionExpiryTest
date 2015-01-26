@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich" xmlns:f="http://java.sun.com/jsf/core">
+  <af:panelStretchLayout id="psl1">
+    <f:facet name="center">
+      <af:panelGroupLayout layout="scroll" xmlns:af="http://xmlns.oracle.com/adf/faces/rich" id="pgl1">
+        <af:outputText value="This text is inside a region!" id="ot1"/>
+        <af:commandButton text="goto second page in region" id="cb1" action="gopage2"/>
+      </af:panelGroupLayout>
+      <!-- id="af_one_column_stretched"   -->
+    </f:facet>
+  </af:panelStretchLayout>
+</jsp:root>
