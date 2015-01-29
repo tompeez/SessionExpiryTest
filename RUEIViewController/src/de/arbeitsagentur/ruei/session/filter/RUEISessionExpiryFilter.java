@@ -86,8 +86,11 @@ public class RUEISessionExpiryFilter implements Filter {
             //            String redirectUri = request.getRequestURI();
             String redirectUri = "http://127.0.0.1:7101/ruei/timeout.html";
             LOGGER.info("Redirect to: " + redirectUri);
-
-            ((HttpServletResponse)servletResponse).sendRedirect(redirectUri);
+            HttpServletResponse httpResponse = (HttpServletResponse) servletResponse;
+            httpResponse.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1
+            httpResponse.setHeader("Pragma", "no-cache"); // HTTP 1.0
+            httpResponse.setDateHeader("Expires", 0); // Proxies.
+            httpResponse.sendRedirect(redirectUri);
         } else {
             LOGGER.info("Continue normal Filter Chain.");
 
